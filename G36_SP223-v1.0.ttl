@@ -279,6 +279,7 @@ g36:ElectricHeatingCoil
       sh:minCount 1 ;
       sh:qualifiedValueShape [
         sh:class s223:QuantifiableActuatableProperty ;
+        g36:hasLabel "HeatingCommand1" ;
         sh:node [
           sh:property [
             sh:path qudt:hasQuantityKind ;
