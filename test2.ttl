@@ -1,0 +1,22 @@
+@prefix bldg: <urn:ex/> .
+@prefix s223: <http://data.ashrae.org/standard223#> .
+@prefix owl: <http://www.w3.org/2012/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix g36: <http://data.ashrae.org/standard223/1.0/extensions/g36#> .
+@prefix c2s: <http://fakesite.c2s#> .
+
+c2s:a c2s:has 1, c2s:b .
+c2s:b c2s:has c2s:b1, c2s:b2, c2s:b3 .
+
+c2s:b1 c2s:has 1 .
+
+c2s:b2 c2s:has c2s:b21, c2s:b22, c2s:b23 .
+c2s:b21 c2s:has 1, 2 .
+c2s:b22 c2s:has 1, 2 .
+c2s:b23 c2s:has 1, 2 .
+
+c2s:b3 c2s:has c2s:b31, c2s:b32 .
+c2s:b31 c2s:has 1, 2 .
+c2s:b32 c2s:has 1, 2 .

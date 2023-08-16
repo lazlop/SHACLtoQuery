@@ -1,0 +1,17 @@
+@prefix bldg: <urn:ex/> .
+@prefix s223: <http://data.ashrae.org/standard223#> .
+@prefix owl: <http://www.w3.org/2012/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix g36: <http://data.ashrae.org/standard223/1.0/extensions/g36#> .
+@prefix c2s: <http://fakesite.c2s#> .
+
+bldg: a owl:Ontology .
+
+bldg:ahu a s223:AirHandlingUnit, s223:ResistanceHeater;
+    s223:hasProperty bldg:p1 ;
+.
+bldg:p1 a s223:QuantifiableActuatableProperty ;
+    qudt:hasQuantityKind quantitykind:DimensionlessRatio ;
+.

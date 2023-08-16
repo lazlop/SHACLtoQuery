@@ -1,0 +1,2020 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "ChilledWaterCoil" ;
+    rdfs:comment "A cooling element made of pipe or tube that may or may not be finned and formed into helical or serpentine shape." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#CoolingCoil> ;
+    sh:class <http://data.ashrae.org/standard223#CoolingCoil> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b17> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterValve> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "Chilled Water Valve" ;
+    rdfs:comment "A device to regulate or stop the flow of cold fluid in a pipe or a duct by throttling." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#Valve> ;
+    sh:class <http://data.ashrae.org/standard223#Valve> ;
+    sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b27> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b29> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "Damper" ;
+    rdfs:comment "An element inserted into an air-distribution system or element of an air-distribution system permitting modification of the air resistance of the system and consequently changing the airflow rate or shutting off the airflow." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#Damper> ;
+    sh:class <http://data.ashrae.org/standard223#Damper> ;
+    sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b9> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#DualDuctTerminalWithDischargeSensor> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "DualDuctTerminalWithDischargeSensor" ;
+    rdfs:comment "A dual duct air terminal mixes two independent sources of primary air. This terminal uses one discharge sensor." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#DualDuctTerminal> ;
+    sh:class <http://data.ashrae.org/standard223#DualDuctTerminal> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b165>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b167>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b172>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b177> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#DualDuctTerminalWithInletSensors> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "DualDuctTerminalWithInletSensors" ;
+    rdfs:comment "A dual duct air terminal mixes two independent sources of primary air. This terminal uses two inlet sensors." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#DualDuctTerminal> ;
+    sh:class <http://data.ashrae.org/standard223#DualDuctTerminal> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b136>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b137>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b142>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b147>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b156> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#DualFanDualDuctAirHandlingUnit> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "DualFanDualDuctAirHandlingUnit" ;
+    rdfs:comment "DualFanDualDuctAirHandlingUnit" ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#AirHandlingUnit> ;
+    sh:class <http://data.ashrae.org/standard223#AirHandlingUnit> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b188>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b192>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b198>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b206> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#ElectricHeatingCoil> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "Electric Heating Coil" ;
+    rdfs:comment "A heating element that forms into a helical or serpentine shape and uses electricity to perform heating." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#ResistanceHeater> ;
+    sh:class <http://data.ashrae.org/standard223#ResistanceHeater> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b41> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#Fan> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "Fan" ;
+    rdfs:comment "A machine used to create flow within a gas such as air." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#Fan> ;
+    sh:class <http://data.ashrae.org/standard223#Fan> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b104> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#FanPoweredTerminal> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "FanPoweredTerminal" ;
+    rdfs:comment "An air terminal containing a fan. Airflow may pass through or be parallel to the fan. These units may also have supplemental heating or cooling." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#FanPoweredTerminal> ;
+    sh:class <http://data.ashrae.org/standard223#FanPoweredTerminal> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b108>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b110>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b116>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b123>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b129> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "FanWithVFD" ;
+    rdfs:comment "A machine used to create flow within a gas such as air. This machine can be controlled to vary in speed." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223/1.0/extensions/g36#Fan> ;
+    sh:class <http://data.ashrae.org/standard223#Fan> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b184> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#Filter> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "Filter" ;
+    rdfs:comment "A device that removes particulates from gasses such as air." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#AirFilter> ;
+    sh:class <http://data.ashrae.org/standard223#AirFilter> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "HotWater/ReheatCoil" ;
+    rdfs:comment "A heating element made of pipe or tube that may or may not be finned and formed into helical or serpentine shape." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#HeatingCoil> ;
+    sh:class <http://data.ashrae.org/standard223#HeatingCoil> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b15> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterValve> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "Hot Water Valve" ;
+    rdfs:comment "A device to regulate or stop the flow of hot fluid in a pipe or a duct by throttling." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#Valve> ;
+    sh:class <http://data.ashrae.org/standard223#Valve> ;
+    sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b38> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b40> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#MultiZoneVAVAirHandlingUnit> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "MultiZoneVAVAirHandlingUnit" ;
+    rdfs:comment "An assembly consisting of sections containing a fan or fans and other necessary equipment to perform one or more of the following functions: circulating, filtration, heating, cooling, heat recovery, humidifying, dehumidifying, and mixing of air. It is usually connected to an air-distribution system. This air handling unit serves multiple zones." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#AirHandlingUnit> ;
+    sh:class <http://data.ashrae.org/standard223#AirHandlingUnit> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b279>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b287>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b295>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b299>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b308>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b316>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b320>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b322> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#MultiZoneVAVAirHandlingUnit-AllPoints> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "MultiZoneVAVAirHandlingUnit" ;
+    rdfs:comment "An assembly consisting of sections containing a fan or fans and other necessary equipment to perform one or more of the following functions: circulating, filtration, heating, cooling, heat recovery, humidifying, dehumidifying, and mixing of air. It is usually connected to an air-distribution system. This air handling unit serves multiple zones." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223/1.0/extensions/g36#MultiZoneVAVAirHandlingUnit> ;
+    sh:class <http://data.ashrae.org/standard223#AirHandlingUnit> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b328>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b337>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b344>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b356>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b370>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b374>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b383>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b388>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b393>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b397>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b401>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b414>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b427>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b440> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#SingleZoneVAVAirHandlingUnit> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "SingleZoneVAVAirHandlingUnit" ;
+    rdfs:comment "An assembly consisting of sections containing a fan or fans and other necessary equipment to perform one or more of the following functions: circulating, filtration, heating, cooling, heat recovery, humidifying, dehumidifying, and mixing of air. It is usually connected to an air-distribution system. This air handling unit that serves one zone only." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#AirHandlingUnit> ;
+    sh:class <http://data.ashrae.org/standard223#AirHandlingUnit> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b214>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b218>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b224>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b232>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b237>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b242> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#SingleZoneVAVAirHandlingUnit-AllPoints> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "SingleZoneVAVAirHandlingUnit" ;
+    rdfs:comment "An assembly consisting of sections containing a fan or fans and other necessary equipment to perform one or more of the following functions: circulating, filtration, heating, cooling, heat recovery, humidifying, dehumidifying, and mixing of air. It is usually connected to an air-distribution system. This air handling unit that serves one zone only." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223/1.0/extensions/g36#SingleZoneVAVAirHandlingUnit> ;
+    sh:class <http://data.ashrae.org/standard223#AirHandlingUnit> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b244>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b248>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b253>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b258>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b267>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b271> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#TwoPositionDamper> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "Two Position Damper" ;
+    rdfs:comment "An element inserted into an air-distribution system or element of an air-distribution system permitting modification of the air resistance of the system and consequently changing the airflow rate or shutting off the airflow. This element only has two positions: fully open and fully closed." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#Damper> ;
+    sh:class <http://data.ashrae.org/standard223#Damper> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b11> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#VAV> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "VAV" ;
+    rdfs:comment "An air-terminal unit assembly having one ducted air inlet and a damper for regulating the airflow rate." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#SingleDuctTerminal> ;
+    sh:class <http://data.ashrae.org/standard223#SingleDuctTerminal> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b45>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b47> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#VAVWithReheat> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "VAV with Reheat" ;
+    rdfs:comment "An air-terminal unit assembly having one ducted air inlet, a damper, and a reheat coil for regulating the airflow rate and discharge air temperature." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223/1.0/extensions/g36#VAV> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b54>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b60> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#Zone> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "Zone" ;
+    rdfs:comment "A Zone is a generic thermal zone, with the points required for Guideline 36 controls. It is a collection of s223:DomainSpace instances." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#Zone> ;
+    sh:class <http://data.ashrae.org/standard223#Zone> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b100>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b69>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b70>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b74>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b79>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b84>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b88> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36#ZoneGroup> a <http://data.ashrae.org/standard223#Class>,
+        rdfs:Class,
+        sh:NodeShape ;
+    rdfs:label "Zone" ;
+    rdfs:comment "A ZoneGroup is a grouping of zones that may be scheduled together. Zone groupings must be assigned based on rules in section 3.1.3 of Guideline 36." ;
+    rdfs:subClassOf <http://data.ashrae.org/standard223#Zone> ;
+    sh:class <http://data.ashrae.org/standard223#Zone> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b67>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b68> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<http://data.ashrae.org/standard223/1.0/extensions/g36> a owl:Ontology ;
+    owl:imports <http://data.ashrae.org/standard223/1.0/extensions/settings>,
+        <http://data.ashrae.org/standard223/1.0/model/all> ;
+    owl:versionInfo "Created with TopBraid Composer" .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b1> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b2> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b10> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b6> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b100> rdfs:comment "A Zone should have at least one zone thermostat override switch property. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b101> ;
+    sh:severity sh:Info .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b101> sh:class <http://data.ashrae.org/standard223#EnumeratedObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b102> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b102> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b103> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b103> sh:hasValue <http://data.ashrae.org/standard223#EnumerationKind-Override> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasEnumerationKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b104> rdfs:comment "A Fan must have at least one Start/Stop command." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b105> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b105> sh:class <http://data.ashrae.org/standard223#EnumeratedActuatableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b106> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b106> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b107> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b107> sh:hasValue <http://data.ashrae.org/standard223#EnumerationKind-OnOff> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasEnumerationKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b108> rdfs:comment "A FanPoweredTerminal must have exactly one Damper." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b109> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b109> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b11> rdfs:comment "A Two Position Damper must have at least one open-and-close damper command property using the relation hasProperty." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b12> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b110> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b111> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b111> sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b114> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b112> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Fan> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b113> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b114> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b112> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b115> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b115> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b113> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b116> rdfs:comment "The FanPoweredTerminal InletConnectionPoint must have a supply airflow property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b117> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b117> sh:class <http://data.ashrae.org/standard223#InletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b118> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b118> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b119> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b119> sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b120> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b12> sh:class <http://data.ashrae.org/standard223#EnumeratedActuatableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b13> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b120> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b121> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b121> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b122> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b122> sh:hasValue <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b123> rdfs:comment "A FanPoweredTerminal must contain a hot water coil or an electric heating coil for heating." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b124> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b124> sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b127> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b125> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b126> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#ElectricHeatingCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b127> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b125> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b128> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b128> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b126> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b129> rdfs:comment "The FanPoweredTerminal OutletConnectionPoint must have a discharge air temperature property. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b130> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b13> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b14> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b130> sh:class <http://data.ashrae.org/standard223#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b131> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b131> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b132> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b132> sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b133> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b133> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b134> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b134> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b135> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b135> sh:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b136> rdfs:comment "DualDuctTerminalWithInletSensors shall contain 2 dampers" ;
+    sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:maxCount 2 ;
+    sh:minCount 2 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b137> rdfs:comment "DualDuctTerminalWithInletSensors shall contain 1 damper that has the Role Heating." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b138> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b138> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b139> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b139> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b140> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b14> sh:hasValue <http://data.ashrae.org/standard223#EnumerationKind-Binary> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasEnumerationKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b140> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b141> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b141> sh:hasValue <http://data.ashrae.org/standard223#Role-Heating> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b142> rdfs:comment "DualDuctTerminalWithInletSensors shall contain 1 damper that has the Role Cooling." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b143> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b143> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b144> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b144> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b145> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b145> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b146> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b146> sh:hasValue <http://data.ashrae.org/standard223#Role-Cooling> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b147> rdfs:comment "The DualDuctTerminalWithInletSensors InletConnectionPoint must have a cooling supply airflow property." ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b148> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b148> sh:class <http://data.ashrae.org/standard223#InletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b149> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b149> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b150> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b15> rdfs:comment "The HotWaterCoil must be connectedTo a HotWaterValve using the relation connectedTo. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#connectedTo> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b16> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b150> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b151> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b151> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b152> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b152> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b153>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b154> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b153> sh:hasValue <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b154> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b155> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b155> sh:hasValue <http://data.ashrae.org/standard223#Role-Cooling> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b156> rdfs:comment "The DualDuctTerminalWithInletSensors InletConnectionPoint must have a heating supply airflow property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b157> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b157> sh:class <http://data.ashrae.org/standard223#InletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b158> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b158> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b159> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b159> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b160> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b16> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterValve> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b160> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b161> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b161> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b162>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b163> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b162> sh:hasValue <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b163> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b164> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b164> sh:hasValue <http://data.ashrae.org/standard223#Role-Heating> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b165> rdfs:comment "DualDuctTerminalWithDischargeSensor shall contain 2 dampers" ;
+    sh:maxCount 2 ;
+    sh:minCount 2 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b166> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b166> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b167> rdfs:comment "In DualDuctTerminalWithDischargeSensor, one Damper has Role Heating" ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b168> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b168> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b169> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b169> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b170> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b17> rdfs:comment "The ChilledWaterCoil must be connectedTo a ChilledWaterValve using the relation connectedTo. " ;
+    sh:path <http://data.ashrae.org/standard223#connectedTo> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b18> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b170> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b171> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b171> sh:hasValue <http://data.ashrae.org/standard223#Role-Heating> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b172> rdfs:comment "In DualDuctTerminalWithDischargeSensor, one Damper has Role Cooling" ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b173> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b173> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b174> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b174> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b175> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b175> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b176> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b176> sh:hasValue <http://data.ashrae.org/standard223#Role-Cooling> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b177> rdfs:comment "The DualDuctTerminalWithDischargeSensor OutletConnectionPoint must have one discharge airflow property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b178> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b178> sh:class <http://data.ashrae.org/standard223#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b179> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b179> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b180> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b18> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterValve> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b180> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b181> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b181> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b182> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b182> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b183> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b183> sh:hasValue <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b184> rdfs:comment "A fan with VFD must have a fan speed command" ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b185> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b185> sh:class <http://data.ashrae.org/standard223#QuantifiableActuatableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b186> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b186> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b187> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b187> sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> ;
+    sh:value <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b188> rdfs:comment "The DualFanDualDuctAirHandlingUnit must contain at least one supply fan with a VFD that has the role Supply." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b189> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b189> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b190> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b19> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b20> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b190> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b191> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b191> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b192> rdfs:comment "The DualFanDualDuctAirHandlingUnit must contain at least one HotWaterCoil or an ElectricHeatingCoil for heating." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b193> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b193> sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b196> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b194> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b195> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#ElectricHeatingCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b196> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b194> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b197> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b197> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b195> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b198> rdfs:comment "A DualFanDualDuctAirHandlingUnit OutletConnectionPoint must have a supply duct static pressure property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b199> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b199> sh:class <http://data.ashrae.org/standard223#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b200> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b2> rdfs:comment "A damper must have at least one analog damper command property or two binary damper command property using the relation hasProperty." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b3> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b20> rdfs:comment "A ChilledWaterValve must have at least one analog valve command property or at least two binary valve command properties." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b21> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b200> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b201> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b201> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b202> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b202> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b203> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b203> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b204>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b205> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b204> sh:hasValue <http://qudt.org/vocab/quantitykind/Pressure> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b205> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b206> rdfs:comment "A DualFanDualDuctAirHandlingUnit OutletConnectionPoint must have a supply air temperature property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b207> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b207> sh:class <http://data.ashrae.org/standard223#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b208> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b208> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b209> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b209> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b210> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b21> sh:class <http://data.ashrae.org/standard223#QuantifiableActuatableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b22> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b210> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b211> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b211> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b212>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b213> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b212> sh:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b213> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b214> rdfs:comment "The SingleZoneVAVAirHandlingUnit must contain at least one supply fan with a VFD that has the role Supply." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b215> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b215> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b216> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b216> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b217> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b217> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b218> rdfs:comment "The SingleZoneVAVAirHandlingUnit must contain at least one HotWaterCoil or an ElectricHeatingCoil for heating." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b219> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b219> sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b222> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b22> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b23> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b220> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b221> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#ElectricHeatingCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b222> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b220> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b223> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b223> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b221> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b224> rdfs:comment "A SingleZoneVAVAirHandlingUnit OutletConnectionPoint must have a supply air temperature property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b225> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b225> sh:class <http://data.ashrae.org/standard223#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b226> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b226> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b227> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b227> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b228> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b228> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b229> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b229> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b230>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b231> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b23> sh:hasValue <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b230> sh:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b231> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b232> rdfs:comment "The SingleZoneVAVAirHandlingUnit must have at least one outdoor air damper." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b233> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b233> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b234> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b234> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b235> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b235> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b236> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b236> sh:hasValue <http://data.ashrae.org/standard223#Role-Outside> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b237> rdfs:comment "The SingleZoneVAVAirHandlingUnit must have at least one return air damper." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b238> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b238> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b239> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b239> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b240> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b24> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b25> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b240> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b241> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b241> sh:hasValue <http://data.ashrae.org/standard223#Role-Return> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b242> rdfs:comment "The  SingleZoneVAVAirHandlingUnit must contain at least one ChilledWaterCoil for cooling." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b243> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b243> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b244> rdfs:comment "In the case where the SingleZoneVAVAirHandlingUnit has relief dampers but no relief fan, a modulating damper should be contained." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b245> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b245> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b246> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b246> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b247> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b247> sh:hasValue <http://data.ashrae.org/standard223#Role-Relief> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b248> rdfs:comment "For the case where the SingleZoneVAVAirHandlingUnit has both a relief air damper and a relief fan, a two position relief damper and relief fan should be contained." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b249> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b249> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#TwoPositionDamper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b250> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b25> rdfs:comment "A ChilledWaterValve must have at least one analog valve command property or at least two binary valve command properties." ;
+    sh:minCount 2 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 2 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b26> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b250> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b251> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b251> sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b252> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b252> sh:hasValue <http://data.ashrae.org/standard223#Role-Relief> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b253> rdfs:comment "For the case where the SingleZoneVAVAirHandlingUnit has both a relief air damper and a relief fan, the SingleZoneVAVAirHandlingUnit must indeed have a relief fan." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b254> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b254> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b255> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b255> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b256> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b256> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b257> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b257> sh:hasValue <http://data.ashrae.org/standard223#Role-Relief> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b258> rdfs:comment "For the case where the SingleZoneVAVAirHandlingUnit has both a relief air damper and a relief fan, the SingleZoneVAVAirHandlingUnit must be connectedTo at least one VAV, which connectedTo at least one HVAC DomainSpace, which is contained by at least one Zone, which has a building static pressure property." ;
+    sh:minCount 1 ;
+    sh:path <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b260> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b264> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b259> sh:inversePath <http://data.ashrae.org/standard223#contains> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b26> sh:class <http://data.ashrae.org/standard223#EnumeratedActuatableProperty> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b260> rdf:first <http://data.ashrae.org/standard223#connectedTo> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b261> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b261> rdf:first <http://data.ashrae.org/standard223#connectedTo> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b262> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b262> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b259> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b263> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b263> rdf:first <http://data.ashrae.org/standard223#hasProperty> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b264> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b265> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b265> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b266> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b266> sh:hasValue <http://qudt.org/vocab/quantitykind/Pressure> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b267> rdfs:comment "For the case where the SingleZoneVAVAirHandlingUnit has a return fan, the SingleZoneVAVAirHandlingUnit must indeed contain a return fan." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b268> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b268> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b269> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b269> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b270> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b27> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b19> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b28> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b270> sh:hasValue <http://data.ashrae.org/standard223#Role-Return> ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b271> rdfs:comment "For the case where the SingleZoneVAVAirHandlingUnit has a return fan, the SingleZoneVAVAirHandlingUnit must contain an exhaust air damper with either an analog or two-position damper command property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b272> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b272> sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b277> ;
+    sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b275> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b273> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b274> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#TwoPositionDamper> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b275> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b273> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b276> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b276> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b274> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b277> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b278> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b278> sh:hasValue <http://data.ashrae.org/standard223#Role-Exhaust> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b279> rdfs:comment "One MultiZoneVAVAirHandlingUnit InletConnectionPoint must have at least one return air temperature property. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b280> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b28> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b24> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b280> sh:class <http://data.ashrae.org/standard223#InletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b281> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b281> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b282> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b282> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b283> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b283> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b284> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b284> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b285>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b286> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b285> sh:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b286> sh:hasValue <http://data.ashrae.org/standard223#Role-Return> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b287> rdfs:comment "One MultiZoneVAVAirHandlingUnit InletConnectionPoint must have at least one outdoor air temperature property. " ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b288> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b288> sh:class <http://data.ashrae.org/standard223#InletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b289> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b289> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b290> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b29> rdfs:comment "A chilled water valve must hasMedium Water-ChilledWater." ;
+    sh:hasValue <http://data.ashrae.org/standard223#Water-ChilledWater> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasMedium> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b290> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b291> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b291> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b292> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b292> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b293>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b294> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b293> sh:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b294> sh:hasValue <http://data.ashrae.org/standard223#Role-Outside> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b295> rdfs:comment "The MultiZoneVAVAirHandlingUnit must contain a Supply Fan with a VFD that has the role Supply" ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b296> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b296> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b297> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b297> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b298> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b298> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b299> rdfs:comment "One MultiZoneVAVAirHandlingUnit OutletConnectionPoint must have a supply air temperature property. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b300> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b3> sh:class <http://data.ashrae.org/standard223#QuantifiableActuatableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b4> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b30> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b31> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b300> sh:class <http://data.ashrae.org/standard223#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b301> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b301> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b302> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b302> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b303> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b303> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b304> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b304> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b305>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b306> ;
+    sh:rule <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b307> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b305> sh:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b306> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b307> a sh:TripleRule ;
+    sh:object 3 ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b308> rdfs:comment "The MultiZoneVAVAirHandlingUnit OutletConnectionPoint must have a supply duct static pressure property. " ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b309> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b309> sh:class <http://data.ashrae.org/standard223#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b310> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b31> rdfs:comment "A HotWaterValve must have at least one analog valve command property or at least two binary valve command property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b32> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b310> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b311> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b311> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b312> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b312> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b313> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b313> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b314>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b315> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b314> sh:hasValue <http://qudt.org/vocab/quantitykind/Pressure> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b315> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b316> rdfs:comment "The MultiZoneVAVAirHandlingUnit must contain a return air damper." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b317> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b317> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b318> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b318> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b319> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b319> sh:hasValue <http://data.ashrae.org/standard223#Role-Return> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b32> sh:class <http://data.ashrae.org/standard223#QuantifiableActuatableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b33> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b320> rdfs:comment "The  MultiZoneVAVAirHandlingUnit must contain at least one ChilledWaterCoil for cooling." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b321> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b321> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#ChilledWaterCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b322> rdfs:comment "The  MultiZoneVAVAirHandlingUnit must contain at least one HotWaterCoil or an ElectricHeatingCoil for heating." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b323> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b323> sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b326> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b324> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b325> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#ElectricHeatingCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b326> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b324> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b327> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b327> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b325> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b328> rdfs:comment "For units with a common economizer/minimum OA damper, one MultiZoneVAVAirHandlingUnit InletConnectionPoint must have at least one outdoor airflow property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b329> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b329> sh:class <http://data.ashrae.org/standard223#InletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b330> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b33> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b34> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b330> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b331> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b331> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b332> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b332> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b333> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b333> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b334>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b335> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b334> sh:hasValue <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b335> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b336> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b336> sh:hasValue <http://data.ashrae.org/standard223#Role-Outside> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b337> rdfs:comment "For units with a common economizer/minimum OA damper, it must contain a damper with the role economizer and the role outside." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b338> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b338> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b339> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b339> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b340>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b342> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b34> sh:hasValue <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b340> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b341> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b341> sh:hasValue <http://data.ashrae.org/standard223#Role-Outside> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b342> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b343> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b343> sh:hasValue <http://data.ashrae.org/standard223#Role-Economizer> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b344> rdfs:comment "For units with a separate minimum outdoor air damper and DP sensor, MultiZoneVAVAirHandlingUnit must contain a two-position outdoor air damper with a differential pressure property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b345> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b345> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#TwoPositionDamper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b346> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b346> sh:not <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b349> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b347>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b352> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b347> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b348> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b348> sh:hasValue <http://data.ashrae.org/standard223#Role-Outside> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b349> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b350> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b35> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b350> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b351> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b351> sh:hasValue <http://data.ashrae.org/standard223#Role-Economizer> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b352> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b353> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b353> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b354> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b354> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b355> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b355> sh:hasValue <http://qudt.org/vocab/quantitykind/Pressure> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b356> rdfs:comment "For units with a separate minimum outdoor air damper and AFMS, MultiZoneVAVAirHandlingUnit must contain a modulating outdoor air damper with a minimum airflow property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b357> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b357> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b358> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b358> sh:not <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b361> ;
+    sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b359>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b364> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b359> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b360> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b36> rdfs:comment "A HotWaterValve must have at least one analog valve command property or at least two binary valve command property." ;
+    sh:minCount 2 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 2 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b37> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b360> sh:hasValue <http://data.ashrae.org/standard223#Role-Outside> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b361> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b362> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b362> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b363> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b363> sh:hasValue <http://data.ashrae.org/standard223#Role-Economizer> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b364> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b365> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b365> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b366> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b366> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b367>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b368> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b367> sh:hasValue <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b368> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b369> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b369> sh:hasValue <http://data.ashrae.org/standard223#Dimensioned-Minimum> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b37> sh:class <http://data.ashrae.org/standard223#EnumeratedActuatableProperty> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b370> rdfs:comment "For units with actuated relief dampers but no relief fan, the MultiZoneVAVAirHandlingUnit must contain a relief air damper with an analog damper command property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b371> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b371> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b372> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b372> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b373> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b373> sh:hasValue <http://data.ashrae.org/standard223#Role-Relief> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b374> rdfs:comment "For units with actuated relief dampers but no relief fan, the MultiZoneVAVAirHandlingUnit must be connectedTo at least one VAV, which connectedTo at least one HVAC DomainSpace, which is contained by at least one Zone, which has a building static pressure property." ;
+    sh:minCount 1 ;
+    sh:path <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b376> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b380> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b375> sh:inversePath <http://data.ashrae.org/standard223#contains> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b376> rdf:first <http://data.ashrae.org/standard223#connectedTo> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b377> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b377> rdf:first <http://data.ashrae.org/standard223#connectedTo> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b378> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b378> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b375> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b379> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b379> rdf:first <http://data.ashrae.org/standard223#hasProperty> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b38> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b30> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b39> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b380> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b381> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b381> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b382> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b382> sh:hasValue <http://qudt.org/vocab/quantitykind/Pressure> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b383> rdfs:comment "For units with both a relief air damper and a relief fan, the MultiZoneVAVAirHandlingUnit must have a relief air damper with a two-position damper command property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b384> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b384> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#TwoPositionDamper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b385> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b385> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b386> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b386> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b387> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b387> sh:hasValue <http://data.ashrae.org/standard223#Role-Relief> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b388> rdfs:comment "For units with both a relief air damper and a relief fan, the MultiZoneVAVAirHandlingUnit must have a relief fan with a VFD." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b389> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b389> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b390> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b39> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b35> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b390> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b391> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b391> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b392> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b392> sh:hasValue <http://data.ashrae.org/standard223#Role-Relief> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b393> rdfs:comment "For units with a return fan, the MultiZoneVAVAirHandlingUnit must indeed contain a return fan." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b394> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b394> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b395> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b395> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b396> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b396> sh:hasValue <http://data.ashrae.org/standard223#Role-Return> ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b397> rdfs:comment "For units with a return fan, the MultiZoneVAVAirHandlingUnit must contain an exhaust air damper." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b398> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b398> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b399> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b399> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b400> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b4> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b5> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b40> rdfs:comment "A hot water valve must hasMedium Water-HotWater." ;
+    sh:hasValue <http://data.ashrae.org/standard223#Water-HotWater> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasMedium> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b400> sh:hasValue <http://data.ashrae.org/standard223#Role-Exhaust> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b401> rdfs:comment "For units with a return fan, if airflow tracking logic is used, the OutletConnectionPoint of the supply fan in the MultiZoneVAVAirHandlingUnit must have a supply airflow property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b402> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b402> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b403>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b405> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b403> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b404> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b404> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b405> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b406> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b406> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b407> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b407> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b408> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b408> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b409> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b409> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b410> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b41> rdfs:comment "An electric heating coil must have at least one analog heating command property or two binary heating command property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b42> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b410> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b411> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b411> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b412>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b413> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b412> sh:hasValue <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b413> sh:hasValue <http://data.ashrae.org/standard223#Role-Supply> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b414> rdfs:comment "For units with a return fan, if airflow tracking logic is used, the OutletConnectionPoint of the return fan in the MultiZoneVAVAirHandlingUnit must have a return airflow property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b415> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b415> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b416>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b418> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b416> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b417> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b417> sh:hasValue <http://data.ashrae.org/standard223#Role-Return> ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b418> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b419> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b419> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b420> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b42> sh:class <http://data.ashrae.org/standard223#QuantifiableActuatableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b43> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b420> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b421> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b421> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b422> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b422> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b423> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b423> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b424> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b424> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b425>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b426> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b425> sh:hasValue <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b426> sh:hasValue <http://data.ashrae.org/standard223#Role-Return> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b427> rdfs:comment "For units with a return fan, if direct building pressure logic is used, the OutletConnectionPoint of the return fan in the MultiZoneVAVAirHandlingUnit must have a return fan discharge static pressure property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b428> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b428> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#FanWithVFD> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b429>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b431> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b429> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b430> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b43> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b44> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b430> sh:hasValue <http://data.ashrae.org/standard223#Role-Return> ;
+    sh:path <http://data.ashrae.org/standard223#hasRole> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b431> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b432> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b432> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b433> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b433> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b434> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b434> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b435> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b435> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b436> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b436> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b437> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b437> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b438>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b439> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b438> sh:hasValue <http://qudt.org/vocab/quantitykind/Pressure> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b439> sh:hasValue <http://data.ashrae.org/standard223#Role-Return> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b44> sh:hasValue <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b440> rdfs:comment "For units with a return fan, if direct building pressure logic is used, the MultiZoneVAVAirHandlingUnit must be connectedTo at least one VAV, which connectedTo at least one HVAC DomainSpace, which is contained by at least one Zone, which has a building static pressure property." ;
+    sh:minCount 1 ;
+    sh:path <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b442> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b446> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b441> sh:inversePath <http://data.ashrae.org/standard223#contains> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b442> rdf:first <http://data.ashrae.org/standard223#connectedTo> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b443> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b443> rdf:first <http://data.ashrae.org/standard223#connectedTo> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b444> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b444> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b441> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b445> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b445> rdf:first <http://data.ashrae.org/standard223#hasProperty> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b446> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b447> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b447> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b448> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b448> sh:hasValue <http://qudt.org/vocab/quantitykind/Pressure> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b45> rdfs:comment "A VAV must contain exactly one Damper." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b46> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b46> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Damper> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b47> rdfs:comment "The VAV OutletConnectionPoint must have one discharge airflow property.",
+        "This rule originally also checked connection points this may mapTo. Instead of always checking mapsTo, it would be better to have a tool that optionally applies properties to the connection points that are mapped to each other or adjacent." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b48> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b48> sh:class <http://data.ashrae.org/standard223#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b49> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b49> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b50> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b5> sh:hasValue <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b50> sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b51> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b51> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b52> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b52> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b53> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b53> sh:hasValue <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b54> rdfs:comment "The VAVWithReheat must contain a hot water coil or an electric heating coil for heating. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b55> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b55> sh:or <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b58> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b56> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#HotWaterCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b57> sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#ElectricHeatingCoil> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b58> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b56> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b59> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b59> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b57> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b6> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b7> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b60> rdfs:comment "The VAVWithReheat OutletConnectionPoint must have a discharge air temperature property. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasConnectionPoint> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b61> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b61> sh:class <http://data.ashrae.org/standard223#OutletConnectionPoint> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b62> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b62> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b63> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b63> sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b64> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b64> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b65> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b65> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b66> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b66> sh:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b67> rdfs:comment "A ZoneGroup must have the Domain HVAC." ;
+    sh:hasValue <http://data.ashrae.org/standard223#Domain-HVAC> ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasDomain> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b68> rdfs:comment "A ZoneGroup must contain at least one Zone." ;
+    sh:class <http://data.ashrae.org/standard223/1.0/extensions/g36#Zone> ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#contains> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b69> sh:hasValue <http://data.ashrae.org/standard223#Domain-HVAC> ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasDomain> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b7> rdfs:comment "A damper must have at least one analog damper command property or two binary damper command property using the relation hasProperty." ;
+    sh:minCount 2 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 2 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b8> ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b70> rdfs:comment "A Zone must have at least one Zone Temperature property. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b71> ;
+    sh:qualifiedValueShapesDisjoint true ;
+    sh:severity <http://data.ashrae.org/standard223#g36> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b71> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b72> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b72> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b73> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b73> sh:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b74> rdfs:comment "A Zone should have a zone temperature setpoint adjustment property, if applicable. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b75> ;
+    sh:qualifiedValueShapesDisjoint true ;
+    sh:severity sh:Info .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b75> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b76> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b76> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b77>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b78> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b77> sh:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b78> sh:hasValue <http://data.ashrae.org/standard223#Dimensioned-Delta> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasAspect> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b79> rdfs:comment "A Zone should have at a zone CO2 concentration property, if applicable control is used. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b80> ;
+    sh:severity sh:Info .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b8> sh:class <http://data.ashrae.org/standard223#EnumeratedActuatableProperty> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b80> sh:class <http://data.ashrae.org/standard223#QuantifiableObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b81> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b81> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b82>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b83> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b82> sh:hasValue <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://qudt.org/schema/qudt/hasQuantityKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b83> sh:hasValue <http://data.ashrae.org/standard223#Substance-CO2> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#ofSubstance> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b84> rdfs:comment "A Zone should have at least one binary zone occupancy property. " ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b85> ;
+    sh:severity sh:Info .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b85> sh:class <http://data.ashrae.org/standard223#EnumeratedObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b86> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b86> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b87> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b87> sh:hasValue <http://data.ashrae.org/standard223#EnumerationKind-Occupancy> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasEnumerationKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b88> rdfs:comment "A Zone should have at least one window switch OnOff property." ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasProperty> ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b89> ;
+    sh:severity sh:Info .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b89> sh:class <http://data.ashrae.org/standard223#EnumeratedObservableProperty> ;
+    sh:node <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b90> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b9> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b1> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b10> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b90> sh:property <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b91>,
+        <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b92> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b91> sh:hasValue <http://data.ashrae.org/standard223#EnumerationKind-OnOff> ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path <http://data.ashrae.org/standard223#hasEnumerationKind> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b92> rdfs:comment "Property must be measured at a window" ;
+    sh:class <http://data.ashrae.org/standard223#Window> ;
+    sh:path <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b93> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b93> sh:alternativePath <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b98> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b94> sh:inversePath <http://data.ashrae.org/standard223#observes> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b95> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b94> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b96> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b96> rdf:first <http://data.ashrae.org/standard223#hasMeasurementLocation> ;
+    rdf:rest () .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b97> sh:inversePath <http://data.ashrae.org/standard223#hasProperty> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b98> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b95> ;
+    rdf:rest <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b99> .
+
+<https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b99> rdf:first <https://rdflib.github.io/.well-known/genid/rdflib/n3f9e2f5e271246e39102ebc895224851b97> ;
+    rdf:rest () .
+
